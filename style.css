@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #101010;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background: #c8102e;
+  text-align: center;
+  padding: 30px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 35px;
+  letter-spacing: 4px;
+}
+
+header p {
+  margin-bottom: 0;
+  letter-spacing: 3px;
+}
+
+nav {
+  background: #202020;
+  padding: 18px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 15px;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 35px 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 28px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #aaa;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.table {
+  margin-top: 30px;
+  background: #1d1d1d;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table-head, .item {
+  display: grid;
+  grid-template-columns: 0.7fr 2fr 1.5fr 0.8fr;
+  align-items: center;
+  padding: 18px;
+  gap: 8px;
+}
+
+.table-head {
+  background: #c8102e;
+  font-weight: bold;
+}
+
+.item {
+  border-bottom: 1px solid #333;
+}
+
+.item:hover {
+  background: #303030;
+}
+
+.rank {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffca28;
+}
+
+.team {
+  font-weight: bold;
+}
+
+.season {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.score {
+  color: #00df85;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #777;
+}
+
+@media(max-width:600px) {
+  .table-head, .item {
+    grid-template-columns: 0.6fr 1.5fr 1.2fr 0.7fr;
+    padding: 12px 8px;
+    font-size: 12px;
+  }
+
+  .rank, .score {
+    font-size: 15px;
+  }
+
+  nav a {
+    margin: 7px;
+    font-size: 12px;
+  }
+  .item {
+  cursor: pointer;
+}
+
+.item:hover {
+  background: #444;
+}
+
+.detail {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #202020;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.detail img {
+  width: 100%;
+  max-width: 400px;
+  height: 350px;
+  object-fit: contain;
+  display: block;
+  margin: 20px auto;
+}
+
+.detail button {
+  background: #c8102e;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+}
